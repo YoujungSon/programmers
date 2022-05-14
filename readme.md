@@ -14,12 +14,22 @@ process.stdin.on('data', data => {
 function solution(absolutes, signs) {
     var answer = 0;
     var length = absolutes.length;
-    for(i=0;i<length;i++){
-        if(signs[i]){
+    for(i = 0; i < length; i++){
+        if(signs[i]){ // signs가 참일 경우
             answer += absolutes[i];
-        }else {
-            answer += (absolutes[i]) *-1;
+        }else { // signs가 거짓일 경우
+            answer += (absolutes[i]) *-1; // 음수로 곱한 것을 대입연산자로 더해준다.
         }
+    }
+    return answer;
+}
+```
+15.내적
+```javascript
+function solution(a, b) {
+    var answer = 0;
+    for(i = 0;i < a.length; i++){
+        answer += a[i] * b[i] //a의 i번째와 b의 i번째를 곱한 것을 대입연산자로 더해준다.
     }
     return answer;
 }
