@@ -9,3 +9,18 @@ process.stdin.on('data', data => {
     console.log((result).repeat(b)); // result를 b번 반복
 });
 ```
+7.음양 더하기
+```javascript
+function solution(absolutes, signs) {
+    var answer = 0;
+    var length = absolutes.length;
+    for(i=0;i<length;i++){
+        if(signs[i]){
+            answer += absolutes[i];
+        }else {
+            answer += (absolutes[i]) *-1;
+        }
+    }
+    return answer;
+}
+```
