@@ -91,6 +91,14 @@ function solution(arr) {
     return answer / arr.length; // arr의 길이로 나눈다.
 }
 ```
+9.핸드폰 번호 가리기
+```javascript
+function solution(phone_number) {
+    var answer = '';
+    answer = ("*").repeat(phone_number.length -4) + phone_number.substr(phone_number.length -4, phone_number.length)
+    return answer;
+}
+```
 15.내적
 ```javascript
 function solution(a, b) {
