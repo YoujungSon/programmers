@@ -22,7 +22,7 @@ function solution(num) {
 }
 ```
 3.가운데 글자 가져오기
-```
+```javascript 
 function solution(s) {
     var answer = '';
     var length = s.length
