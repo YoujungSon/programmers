@@ -9,6 +9,18 @@ process.stdin.on('data', data => {
     console.log((result).repeat(b)); // result를 b번 반복
 });
 ```
+2.짝수와 홀수
+```javascript 
+function solution(num) {
+    var answer = '';
+    if(num % 2 == 0){ // num을 2로 나눈 나머지값이 0이면
+        answer = "Even" // 짝수
+    }else( // 아니면 
+        answer = "Odd" // 홀수
+    )
+    return answer;
+}
+```
 7.음양 더하기
 ```javascript
 function solution(absolutes, signs) {
