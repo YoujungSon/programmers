@@ -95,7 +95,8 @@ function solution(arr) {
 ```javascript
 function solution(phone_number) {
     var answer = '';
-    answer = ("*").repeat(phone_number.length -4) + phone_number.substr(phone_number.length -4, phone_number.length)
+    answer = ("*").repeat(phone_number.length -4)  // *을 phone_number의 길이에서 4를 뺀만큼 반복한다.
+    + phone_number.substr(phone_number.length -4, phone_number.length) // phone_number에서 4를 뺀 숫자 index에서 끝까지를 더한다.
     return answer;
 }
 ```
