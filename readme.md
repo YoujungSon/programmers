@@ -21,6 +21,18 @@ function solution(num) {
     return answer;
 }
 ```
+3.가운데 글자 가져오기
+```
+function solution(s) {
+    var answer = '';
+    var length = s.length
+    if(length % 2 != 0){ //s의 length가 홀수면
+       return s.substr((length-1)/2,1) // length -1 = index / 2, 1글자
+       }else { //s의 length가 짝수면
+       return s.substr((length-1)/2,2) // length -1 = index / 2, 2글자
+       }
+}
+```
 7.음양 더하기
 ```javascript
 function solution(absolutes, signs) {
