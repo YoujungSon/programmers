@@ -33,6 +33,18 @@ function solution(s) {
        }
 }
 ```
+4.두 정수 사이의 합
+```javascript 
+function solution(a, b) {
+    var answer = 0;
+    var max = Math.max(a,b) //a 와 b 중 최대값
+    var min = Math.min(a,b) //a 와 b 중 최소값
+    for(i=min;i<= max;i++){ //min가 max까지 하나씩 증가한다.
+        answer += i // 대입연산자로 합계 계산
+    }
+    return answer;
+}
+```
 7.음양 더하기
 ```javascript
 function solution(absolutes, signs) {
