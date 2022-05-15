@@ -45,6 +45,14 @@ function solution(a, b) {
     return answer;
 }
 ```
+5.문자열을 정수로 바꾸기
+```javascript 
+function solution(s) {
+    var answer = 0;
+    answer = parseInt(s) // 문자열을 정수로 바꿔주는 함수
+    return answer;
+}
+```
 7.음양 더하기
 ```javascript
 function solution(absolutes, signs) {
