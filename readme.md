@@ -159,3 +159,19 @@ function solution(a, b) {
     return answer;
 }
 ```
+19.수박수박수박수박수박수?
+```javascript
+function solution(n) {
+    var answer = '';
+    var txt1 = "수박"
+    var txt2 = "수"
+    for(i = 0;i <= n; i++){ // i는 0부터 n까지 하나씩 늘어난다.
+        if(i % 2 == 0){ // i가 짝수 일 경우 
+            answer = txt1.repeat(i / 2) // i 나누기 2 반큼 "수박"을 반복한다.
+        }else{
+            answer = txt1.repeat((i - 1) / 2) + txt2 //i에서 1을 뺀 만큼 "수박"을 반복하고 "수"를 더해준다.
+            }
+    }
+    return answer;
+}
+```
