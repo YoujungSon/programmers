@@ -125,6 +125,21 @@ function solution(price, money, count) {
     }
 }
 ```
+14.나누어 떨어지는 숫자 배열
+```javascript
+function solution(arr, divisor) {
+    var answer = [];
+    for(i=0; i < arr.length; i++){ // i는 0부터 arr.length-1까지 하나씩 늘어난다.
+        if(arr[i] % divisor == 0){ // arr의 i번째의 수 나누기 divisor 값이 0일 때
+            answer.push(arr[i]) // answer에 arr의 i번째 수를 추가한다.
+        }
+    }
+    if(answer.length == 0) { //answer 값이 없을 때
+        answer = [-1] // answer 값은 [-1]이 된다.
+    }
+    return answer.sort((a,b)=> a-b); // answer 값을 오름차순으로 정렬한다. 
+}
+```
 15.내적
 ```javascript
 function solution(a, b) {
