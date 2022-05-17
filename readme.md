@@ -125,6 +125,15 @@ function solution(price, money, count) {
     }
 }
 ```
+13.2016년
+```javascript
+function solution(a, b){
+  var answer = ["SUN","MON","TUE","WED","THU","FRI","SAT"];
+  var date = new Date(2016,a-1,b); //new Date로 날짜를 지정해준다. a는 0부터 시작하기때문에 -1해준다.
+  day = date.getDay() // getDay : 요일을 지정해 주는 함수 (0:일요일 부터 시작)
+  return answer[day]; //answer에서 day 번째에 있는 요일
+}
+```
 14.나누어 떨어지는 숫자 배열
 ```javascript
 function solution(arr, divisor) {
