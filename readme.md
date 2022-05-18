@@ -159,6 +159,28 @@ function solution(a, b) {
     return answer;
 }
 ```
+16.문자열 내 p와 y의 개수
+```javascript
+function solution(s){
+    var answer = true;
+    var num1 = 0;
+    var num2 = 0;
+    s = s.toLowerCase().split("") // 소문자로 바꾼 후 split으로 글자를 쪼개준다.
+    for(i=0;i<s.length;i++){ //i가 0부터 s의길이까지 하나씩 늘어난다.
+        if(s[i].includes("p")){ // s의 i번째가 p를 포함하고 있다면
+            num1 += 1 // 대입연산자로 합계를 구해준다.
+        }else if(s[i].includes("y")){ //s의 i번째가 y를 포함하고 있다면
+            num2 += 1 // 대입연산자로 합계를 구해준다.
+        }
+    }
+    if(num1 == num2){ //num1의 수와 num2의 수가 같을때
+        answer = true
+    }else{
+        answer = false
+    }
+    return answer;
+}
+```
 19.수박수박수박수박수박수?
 ```javascript
 function solution(n) {
