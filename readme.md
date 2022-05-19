@@ -199,6 +199,18 @@ function solution(s) {
     return answer; //true
 }
 ```
+18.서울에서 김서방 찾기
+```javascript
+function solution(seoul) {
+    var answer = '';
+    for(i=0;i<seoul.length;i++){
+        if(seoul[i] == "Kim"){
+            answer = `김서방은 ${i}에 있다`
+        }
+    }
+    return answer;
+}
+```
 19.수박수박수박수박수박수?
 ```javascript
 function solution(n) {
