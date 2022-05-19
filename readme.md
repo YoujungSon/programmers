@@ -227,3 +227,16 @@ function solution(n) {
     return answer;
 }
 ```
+20.완주하지 못한 선수
+```javascript
+function solution(participant, completion) {
+    var answer = '';
+    participant.sort() //오름차순으로 정렬
+    completion.sort() //오름차순으로 정렬
+    for(i = 0;i < participant.length;i++){ //i가 0부터 participant의 길이까지 하나씩 늘어난다.
+        if(participant[i] != completion[i]){ // participant의 i번째와 completion의 i번째가 다를때
+            return participant[i]
+        }
+    }
+}
+```
