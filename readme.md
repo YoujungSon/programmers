@@ -181,6 +181,24 @@ function solution(s){
     return answer;
 }
 ```
+17.문자열 다루기 기본
+```
+function solution(s) {
+    var answer = true;
+    var num = s.split("") //s를 모두 분리한다.
+
+    if(!(s.length == 4 || s.length == 6)){ // s의 길이가 4나 6이 아닐때
+        return false
+    }else { // s의 길이가 4나 6일 때
+        for(i=0; i<num.length; i++){ //i는 0부터 num의 길이까지 하나씩 늘어난다.
+            if(isNaN(num[i])){ //num의 i번째가 숫자가 아닐 때
+                return false
+            }
+        }
+    }
+    return answer; //true
+}
+```
 19.수박수박수박수박수박수?
 ```javascript
 function solution(n) {
